@@ -4,8 +4,9 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
-
+        <title>CrudApp</title>
+{{--        <link rel="icon" href="{{ asset('favicon') }}" />--}}
+        <link rel="icon" type="image/png"  href="{{asset('images/logo.png')}}">
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet" type="text/css">
         <meta name="csrf-token" content="{{ csrf_token() }}">
@@ -23,8 +24,8 @@
                </button>
                <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
                    <ul class="navbar-nav text-right">
-                       <li class="nav-item inactive">
-                           <a class="nav-link disabled" href="#"></a>
+                       <li class="nav-item active">
+                           <router-link class="nav-link" to="/sample">Sample</router-link>
                        </li>
                        <li class="nav-item active">
                            <router-link class="nav-link" to="/home">Home</router-link>

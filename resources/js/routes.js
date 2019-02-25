@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Example from './components/ExampleComponent'
+import Sample from './components/SampleComponent'
 Vue.use(VueRouter)
 const router = new VueRouter({
     mode: 'history',
@@ -8,6 +9,10 @@ const router = new VueRouter({
         {
               path: '/home',
             component: Example
+        },
+        {
+              path: '/sample',
+            component: Sample
         }
 
     ],
