@@ -13,13 +13,27 @@
         <link rel="stylesheet" href="{{asset('css/app.css')}}">
     </head>
     <body>
-       <div id="app">
-           <div class="container">
-               <div class="jumbotron">
-                   <router-view></router-view>
 
+       <div id="app" class="mt-3">
+           <nav class="nav navbar nav-tabs navbar-expand-sm justify-content-end pt-0">
+               <a class="navbar-brand" href="#">Logo</a>
+               <button class="btn btn-link ml-auto disabled"></button>
+               <button class="navbar-toggler"  type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+                   <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
+                   <ul class="navbar-nav text-right">
+                       <li class="nav-item inactive">
+                           <a class="nav-link disabled" href="#"></a>
+                       </li>
+                       <li class="nav-item active">
+                           <router-link class="nav-link" to="/home">Home</router-link>
+                       </li>
+                   </ul>
                </div>
-           </div>
+           </nav>
+
+                   <router-view></router-view>
        </div>
     <script type="text/javascript" src="{{asset('js/app.js')}}"></script>
     </body>

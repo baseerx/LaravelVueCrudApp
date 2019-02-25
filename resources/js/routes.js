@@ -6,7 +6,7 @@ const router = new VueRouter({
     mode: 'history',
     routes: [
         {
-              path: '/',
+              path: '/home',
             component: Example
         }
 
