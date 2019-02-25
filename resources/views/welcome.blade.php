@@ -17,7 +17,7 @@
 
        <div id="app" class="mt-3">
            <nav class="nav navbar nav-tabs navbar-expand-sm justify-content-end pt-0">
-               <a class="navbar-brand" href="#">Logo</a>
+               <a class="navbar-brand" href="#"><img style="width: 30px;height: 30px;" src="{{ asset('images/logo.png') }}" alt="this is the logo image"></a>
                <button class="btn btn-link ml-auto disabled"></button>
                <button class="navbar-toggler"  type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
                    <span class="navbar-toggler-icon"></span>
@@ -25,10 +25,10 @@
                <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
                    <ul class="navbar-nav text-right">
                        <li class="nav-item active">
-                           <router-link class="nav-link" to="/sample">Sample</router-link>
+                           <router-link class="nav-link" to="/sample">About</router-link>
                        </li>
                        <li class="nav-item active">
-                           <router-link class="nav-link" to="/home">Home</router-link>
+                           <router-link class="nav-link" to="/home">Contact</router-link>
                        </li>
                    </ul>
                </div>

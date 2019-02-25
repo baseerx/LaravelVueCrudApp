@@ -15,6 +15,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('{any}', function () {
-    return redirect('/');
-})->where('any','.*');
+//Route::get('{any}', function () {
+//    return redirect('/');
+//})->where('any','.*');
+
+Route::resource('tasks','TodoController');

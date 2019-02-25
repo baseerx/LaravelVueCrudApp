@@ -17,12 +17,12 @@
 <script>
     export default {
         mounted() {
-            console.log('Sample Component mounted.')
+            console.log('Contact Component mounted.')
         },
         data()
         {
            return{
-                name:" Sample Component"
+                name:" Contact Component"
             }
         }
 
